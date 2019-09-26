@@ -10,7 +10,7 @@ var str = "Hello, playground"
 
 
 
-// STRING
+// STRING //
 
 
 
@@ -31,7 +31,7 @@ var cohort: String = "iOS 6.3"
 
 
 
-// CHARACTER
+// CHARACTER //
 
 
 
@@ -62,7 +62,7 @@ print("Age of fellow 8 years from now is \(futureAge)")
 
 
 
-// DOUBLE
+// DOUBLE //
 
 
 
@@ -77,7 +77,7 @@ print(balance)
 
 
 
-// SHORT HAND ARITHMETIC
+// SHORT HAND ARITHMETIC //
 
 
 balance -= 180000
@@ -85,7 +85,7 @@ balance -= 180000
 print(balance)
 
 
-// BOOLEAN - BOOL, COMPARISON OPERATORS
+// BOOLEAN - BOOL, COMPARISON OPERATORS //
 
 var result = 70 < 100
 
@@ -118,7 +118,8 @@ print(otherResult)
 
 
 
-// ARITHMETIC OPERATORS
+// ARITHMETIC OPERATORS //
+
 // THIS DOES NOT COMPILE - let is immuatable - constant
 //var salary = 20000
 //salary *= 2
@@ -135,7 +136,7 @@ print(marathonTime) // 300
 
 
 
-// MODULO OPERATOR OR REMAINDER OPERATOR
+// MODULO OPERATOR OR REMAINDER OPERATOR //
 
 // % is the modulos operator
 var modResult = 16 % 3
@@ -149,3 +150,12 @@ print(even)
 
 
 var weather = "The weather is beautiful!"
+
+
+
+
+// CONSTANTS //
+
+let pi = 3.14
+
+
