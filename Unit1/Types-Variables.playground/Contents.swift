@@ -1,10 +1,32 @@
 import UIKit
 
+
+// Swift - this is a single line comment
+
+
+/*
+ this is a multiline comment
+ 
+ Swift was introduced in 2014
+ - swift is a type safe language meaning you can't mix a declared data type with another e.g if var name = "Alex"
+   you cannot update name = 10 // won't compile type String is not an Int
+ - modern language
+ - provides optionals that allows us to know whether a variable has a value or not
+ */
+
+
+
+
+// mutable
 var str = "Hello, playground"
 
 // this is a comment
 
 // Data Types: String, Int (Integer)
+
+
+
+
 
 
 
@@ -19,6 +41,22 @@ var str = "Hello, playground"
 // The following line is an example of a Type Inference. A Type Inference is an implicit declaration of a variable
 var fellowName = "David Lin"
 
+print(fellowName) // David Lin
+
+fellowName = "Chelsi Christmas"
+
+// DOES NOT COMPILE - CANNOT ADD DIFFERENT DATA TYPES
+//let newString = "34" + 12
+
+// concatenation - adding together
+let fullName = "Alex" + " Paul" // Alex Paul
+
+var fallCycle = "iOS 6.3"
+
+// using String Interpolation we are printing fullName's description
+print("\(fullName) is the iOS Instructor for \(fallCycle)")
+
+
 
 // The following line is an example of a Type Annotation. A Type Annotation is explicity writing the data type using : (color)
 var cohort: String = "iOS 6.3"
@@ -26,6 +64,20 @@ var cohort: String = "iOS 6.3"
 
 // The following line is a string
 // var alphabet = "c"
+
+
+// String comparison -
+let lowercaseName = "alex"
+let uppercaseName = "Alex"
+
+let stringResult = lowercaseName == uppercaseName
+
+let alphabeticalOrder = "Kelyby" < "Lorraine"
+print("alphabeticalOrder result \(alphabeticalOrder)")
+
+
+
+
 
 
 
@@ -46,7 +98,9 @@ cohort = "iOS 7.3"
 
 
 
-// INT
+// INT //
+
+
 
 var ageOfFellow = 32
 // here I declared a variable called age and initialized value to the number 32
@@ -58,6 +112,25 @@ futureAge
 
 // String interpolation is embedding a variable into a String using \(variable name) syntax as seen below
 print("Age of fellow 8 years from now is \(futureAge)")
+
+
+// integer division truncatews decimals (removes them)
+
+
+
+
+let secondsInMinute = 60
+let secondsInHour = 60 * secondsInMinute
+let secondsInDay = 24 * secondsInHour
+
+
+var secondsInAYear = secondsInDay * 365
+
+// DIVISION BY 0 //
+
+// 89 / 0   DOES NOT COMPILE
+
+
 
 
 
@@ -74,6 +147,34 @@ balance = balance + 85000
 
 print(balance)
 
+// floating point division keeps decimals
+// let floatingPointDivision = 16.0 / 3.0 (also valid to keep decimal points)
+
+let floatingPointDivision: Double = 16 / 3
+print("floating point division is \(floatingPointDivision)")
+
+
+
+// FLOAT VS DOUBLE //
+// FLOAT HOLDS 32-BIT VS 64-BIT OF A DOUBLE //
+
+let floatNum: Float = 67.990776788943
+let doubleNum = 67.990776788943
+print("float is \(floatNum) and double is \(doubleNum)")
+    
+// DOES NOT COMPILE - CANNOT ADD A FLOAT TO A DOUBLE
+// let accountBalance = floatNum + doubleNum
+
+
+// below - here we are casting (converting) a Float to a Double
+let accountBalance = Double(floatNum) + doubleNum
+print("account balance is now \(accountBalance)")
+
+
+
+
+var rockysAge = 20
+print ("rockysHumanAge is \(rockysAge/7)")
 
 
 
@@ -97,6 +198,8 @@ var otherResult = result && true
 print(otherResult)
 
 //&& means and
+// || means or
+
 
 //T&&T = T
 //T&&F = F
@@ -157,5 +260,6 @@ var weather = "The weather is beautiful!"
 // CONSTANTS //
 
 let pi = 3.14
+
 
 
